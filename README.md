@@ -2,8 +2,8 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
 </p>
 
-# Image Uploader #
-Image Uploader server para el challenge de DevChallenge.io
+# DB connection #
+DB connection server
 
 __NOTA:__ Correr la aplicacion con las siguientes dependencias ya instaladas de forma global
 * [Git](https://git-scm.com/)
@@ -14,9 +14,9 @@ __NOTA:__ Correr la aplicacion con las siguientes dependencias ya instaladas de 
 Seguir la siguiente lista de pasos:
 1. Clonar el repositorio y cambiar a la branch _file-and-image_
 ```
-  $ git clone https://github.com/Erezz1/image-uploader.git
-  $ cd ./image-uploader
-  $ git checkout server
+  $ git clone https://github.com/Erezz1/server-templates.git
+  $ cd ./server-templates
+  $ git checkout database
 ```
 
 2. Instalar nest-cli de forma global
