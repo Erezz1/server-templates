@@ -18,16 +18,14 @@ services:
       DB_PORT: ${DB_PORT}
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: ${DB_NAME}
-
-      CLOUDINARY_CLOUD_NAME: ${CLOUDINARY_CLOUD_NAME}
-      CLOUDINARY_API_KEY: ${CLOUDINARY_API_KEY}
-      CLOUDINARY_API_SECRET: ${CLOUDINARY_API_SECRET}
+      DB_HOST: ${DB_HOST}
+      DB_USER: ${DB_USER}
     volumes:
       - ./:/app
 
-  database:
+  app_database:
     image: postgres:14.5-alpine
-    container_name: database
+    container_name: app_database
     restart: always
     ports:
       - ${DB_PORT}:5432
@@ -35,4 +33,7 @@ services:
       DB_PASSWORD: ${DB_PASSWORD}
       DB_NAME: ${DB_NAME}
     volumes:
-      - ./database:/var/lib/postgresql/data
+      - ./postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

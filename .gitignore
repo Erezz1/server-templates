@@ -396,5 +396,5 @@ Temporary Items
 # Local
 .env
 dist
-database
+postgres-data
 fly.toml
